@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using JOS.ApiKeyAuthentication.Web.Features.Authentication;
 using JOS.ApiKeyAuthentication.Web.Features.Authorization;
 using JOS.ApiKeyAuthentication.Web.Features.Swagger;
@@ -45,7 +46,7 @@ namespace JOS.ApiKeyAuthentication.Web
                 .AddJsonOptions(options =>
                 {
                     options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-                    options.JsonSerializerOptions.IgnoreNullValues = true;
+                    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
                 });
 
             services.ConfigureSwaggerFeature();
