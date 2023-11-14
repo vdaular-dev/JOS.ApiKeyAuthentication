@@ -24,8 +24,7 @@ namespace JOS.ApiKeyAuthentication.Web.Features.Authentication
             IOptionsMonitor<ApiKeyAuthenticationOptions> options,
             ILoggerFactory logger,
             UrlEncoder encoder,
-            ISystemClock clock,
-            IGetApiKeyQuery getApiKeyQuery) : base(options, logger, encoder, clock)
+            IGetApiKeyQuery getApiKeyQuery) : base(options, logger, encoder)
         {
             _getApiKeyQuery = getApiKeyQuery ?? throw new ArgumentNullException(nameof(getApiKeyQuery));
         }
