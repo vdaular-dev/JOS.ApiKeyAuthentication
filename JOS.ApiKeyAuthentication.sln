@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.ApiKeyAuthentication.We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.ApiKeyAuthentication.Web.Tests", "test\JOS.ApiKeyAuthentication.Web.Tests\JOS.ApiKeyAuthentication.Web.Tests.csproj", "{9EBD5C5D-4CED-4188-99A7-F1783A355D0B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{7391201F-7150-4899-A34C-2725A6E7E3D5}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
